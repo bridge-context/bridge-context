@@ -562,7 +562,7 @@ interface StorageStats {
 
 ## See Also
 
-- [Architecture Overview](./index) - High-level system architecture
-- [Agent System](./agent-system) - Sub-agent spawning and execution
-- [Storage Commands](../cli/storage-commands) - CLI storage management
-- [Configuration](../getting-started/configuration) - Storage configuration options
+- [Architecture Overview](./) - High-level system architecture
+- [Agent System](./agent-system.md) - Sub-agent spawning and execution
+- [Storage Commands](../cli/storage-commands.md) - CLI storage management
+- [Configuration](../getting-started/configuration.md) - Storage configuration options

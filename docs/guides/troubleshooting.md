@@ -521,6 +521,6 @@ When reporting issues, include:
 
 ## See Also
 
-- [Quick Start](../getting-started/quick-start) - Initial setup
-- [Configuration](../getting-started/configuration) - Configuration reference
-- [CLI Reference](../cli) - Command documentation
+- [Quick Start](../getting-started/quick-start.md) - Initial setup
+- [Configuration](../getting-started/configuration.md) - Configuration reference
+- [CLI Reference](../cli/) - Command documentation

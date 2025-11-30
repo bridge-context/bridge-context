@@ -1,9 +1,9 @@
-# Context Bridge - GitHub Pages Configuration
+# Bridge Context - GitHub Pages Configuration
 # Documentation site for the MCP server for multi-repo AI development workflows
 
-title: Context Bridge
+title: Bridge Context
 description: MCP server for multi-repo AI development workflows
-baseurl: "/context-bridge"
+baseurl: "/"
 url: "https://bridge-context.github.io"
 
 # Theme

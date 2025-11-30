@@ -875,6 +875,6 @@ Override with the `CONTEXT_BRIDGE_STORAGE_PATH` environment variable.
 
 ## See Also
 
-- [AgentAdapter](./agent-adapter) - Agent adapter interface
-- [Storage Layer Architecture](../architecture/storage-layer) - Storage system internals
-- [Storage Commands](../cli/storage-commands) - CLI storage management
+- [AgentAdapter](./agent-adapter.md) - Agent adapter interface
+- [Storage Layer Architecture](../architecture/storage-layer.md) - Storage system internals
+- [Storage Commands](../cli/storage-commands.md) - CLI storage management

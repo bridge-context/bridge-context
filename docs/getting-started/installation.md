@@ -7,87 +7,76 @@ nav_order: 1
 
 # Installation
 
-This guide covers installing Context Bridge from source and configuring it for use with your AI assistant.
+Install Context Bridge from npm or source.
 
 ---
 
 ## Prerequisites
 
-### Node.js
-
-Context Bridge requires **Node.js 18 or later**.
-
-```bash
-# Check your Node.js version
-node --version
-```
-
-If you need to install or update Node.js, visit [nodejs.org](https://nodejs.org/) or use a version manager like [nvm](https://github.com/nvm-sh/nvm).
-
-### AI CLI Tool
-
-Context Bridge works with any MCP-compatible AI client. Supported options include:
-
-- **[Claude Desktop](https://claude.ai/download)** - Anthropic's desktop application
-- **[Claude Code](https://docs.anthropic.com/en/docs/claude-code)** - CLI-based Claude assistant
-- **[Cursor](https://cursor.sh/)** - AI-powered code editor
-- **[Codex](https://github.com/openai/codex)** - OpenAI's coding assistant
-- **[Aider](https://aider.chat/)** - AI pair programming in your terminal
+| Requirement | Version | Notes |
+|-------------|---------|-------|
+| **Node.js** | >= 18.0.0 | Check with `node --version` |
+| **MCP Client** | Any | Claude Desktop, Claude Code, Cursor, Codex, Aider |
 
 ---
 
-## Install from Source
+## Installation Methods
 
-### 1. Clone the Repository
+| Method | Command | Best For |
+|--------|---------|----------|
+| **npm (global)** | `npm install -g context-bridge` | Most users |
+| **From source** | Clone + build | Development/contribution |
+| **Link globally** | `npm link` | Testing local changes |
+
+<details>
+<summary><strong>npm global install</strong></summary>
+
+```bash
+npm install -g context-bridge
+```
+
+This installs `context-bridge` and `cb` commands globally.
+
+</details>
+
+<details>
+<summary><strong>Install from source</strong></summary>
 
 ```bash
 git clone https://github.com/bridge-context/context-bridge.git
 cd context-bridge
-```
-
-### 2. Install Dependencies
-
-```bash
 npm install
-```
-
-### 3. Build the Project
-
-```bash
 npm run build
 ```
 
-This compiles the TypeScript source and prepares the CLI for use.
+</details>
 
----
+<details>
+<summary><strong>Link globally (development)</strong></summary>
 
-## Link Globally
-
-To use `context-bridge` as a global command:
+After building from source:
 
 ```bash
 npm link
 ```
 
-This creates a symlink in your global `node_modules`, making the `context-bridge` command available system-wide.
+Creates a symlink making `context-bridge` and `cb` available system-wide.
+
+</details>
 
 ---
 
 ## Verify Installation
 
-Run the doctor command to verify your installation:
-
 ```bash
-context-bridge doctor
+# Check version
+cb --version
+
+# Run health check
+cb doctor
 ```
 
-This checks:
-- Node.js version compatibility
-- Configuration file presence
-- Storage database connectivity
-- Agent adapter availability
-
-A successful output looks like:
+Successful `cb doctor` output:
 
 ```
 Context Bridge Health Check
@@ -104,43 +93,39 @@ All systems operational!
 
 ## Install in MCP Client
 
-### Claude Desktop
-
-The easiest way to install Context Bridge in Claude Desktop:
+<details>
+<summary><strong>Claude Desktop (automatic)</strong></summary>
 
 ```bash
-context-bridge install
+cb install
 ```
 
-This automatically adds the MCP server configuration to your Claude Desktop settings.
+Automatically configures Claude Desktop's MCP settings.
 
-**Manual installation:**
+</details>
 
-1. Open Claude Desktop settings
-2. Navigate to the MCP servers section
-3. Add a new server with the following configuration:
+<details>
+<summary><strong>Claude Desktop (manual)</strong></summary>
+
+Add to Claude Desktop settings → MCP servers:
 
 ```json
 {
   "mcpServers": {
     "context-bridge": {
-      "command": "node",
-      "args": ["/path/to/context-bridge/dist/index.js"],
-      "env": {}
+      "command": "context-bridge",
+      "args": ["serve"]
     }
   }
 }
 ```
 
-Replace `/path/to/context-bridge` with your actual installation path.
+</details>
 
-### Cursor
+<details>
+<summary><strong>Cursor</strong></summary>
 
-For Cursor, add the MCP server in your workspace settings:
-
-1. Open Cursor settings (`Cmd+,` or `Ctrl+,`)
-2. Search for "MCP" or navigate to AI settings
-3. Add the Context Bridge server:
+In Cursor settings (`Cmd+,` / `Ctrl+,`) → AI → MCP:
 
 ```json
 {
@@ -153,9 +138,11 @@ For Cursor, add the MCP server in your workspace settings:
 }
 ```
 
+</details>
+
 ---
 
 ## Next Steps
 
-- [Quick Start](./quick-start) - Set up your first project in 5 minutes
-- [Configuration](./configuration) - Learn about configuration options
+- [Quick Start](./quick-start.md) - Set up your first project in 5 minutes
+- [Configuration](./configuration.md) - Configuration options

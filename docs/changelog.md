@@ -190,6 +190,6 @@ If upgrading from pre-0.0.1 development versions:
 
 ## See Also
 
-- [Roadmap](./roadmap) - Future development plans
-- [Getting Started](./getting-started) - Installation and setup
-- [Architecture](./architecture) - System design and patterns
+- [Roadmap](./roadmap.md) - Future development plans
+- [Getting Started](./getting-started/) - Installation and setup
+- [Architecture](./architecture/) - System design and patterns

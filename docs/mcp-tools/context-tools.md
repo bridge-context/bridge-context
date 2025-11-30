@@ -440,6 +440,6 @@ Returns a list of repositories configured in the current (or specified) project.
 
 ## See Also
 
-- [Query Tools](./query-tools) - Query repository contents
-- [Implementation Tools](./implementation-tools) - Implement changes in repositories
-- [Project Commands](../cli/project-commands) - CLI project management
+- [Query Tools](./query-tools.md) - Query repository contents
+- [Implementation Tools](./implementation-tools.md) - Implement changes in repositories
+- [Project Commands](../cli/project-commands.md) - CLI project management

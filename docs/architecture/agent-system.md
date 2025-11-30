@@ -533,7 +533,7 @@ agent:
 
 ## See Also
 
-- [Architecture Overview](./index) - High-level system architecture
-- [Storage Layer](./storage-layer) - Data persistence and caching
-- [Agent Commands](../cli/agent-commands) - CLI agent management
-- [Configuration](../getting-started/configuration) - Agent configuration options
+- [Architecture Overview](./) - High-level system architecture
+- [Storage Layer](./storage-layer.md) - Data persistence and caching
+- [Agent Commands](../cli/agent-commands.md) - CLI agent management
+- [Configuration](../getting-started/configuration.md) - Agent configuration options

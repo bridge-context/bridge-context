@@ -321,5 +321,5 @@ context-bridge project delete old-project --force
 
 ## See Also
 
-- [Repository Commands](./repo-commands) - Add and manage repositories within projects
-- [Configuration](../getting-started/configuration) - Project configuration file format
+- [Repository Commands](./repo-commands.md) - Add and manage repositories within projects
+- [Configuration](../getting-started/configuration.md) - Project configuration file format

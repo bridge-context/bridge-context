@@ -376,5 +376,5 @@ Summary:
 
 ## See Also
 
-- [Configuration](../getting-started/configuration) - Agent configuration options
-- [Utility Commands](./utility-commands) - The `doctor` command for overall health checks
+- [Configuration](../getting-started/configuration.md) - Agent configuration options
+- [Utility Commands](./utility-commands.md) - The `doctor` command for overall health checks

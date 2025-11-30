@@ -358,7 +358,7 @@ structure matches between the services."
 
 ## See Also
 
-- [Quick Start](../getting-started/quick-start) - Initial setup guide
-- [Query Tools](../mcp-tools/query-tools) - Deep dive on querying repos
-- [Implementation Tools](../mcp-tools/implementation-tools) - Making changes across repos
-- [Troubleshooting](./troubleshooting) - Common issues and solutions
+- [Quick Start](../getting-started/quick-start.md) - Initial setup guide
+- [Query Tools](../mcp-tools/query-tools.md) - Deep dive on querying repos
+- [Implementation Tools](../mcp-tools/implementation-tools.md) - Making changes across repos
+- [Troubleshooting](./troubleshooting.md) - Common issues and solutions

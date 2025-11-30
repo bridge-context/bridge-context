@@ -7,19 +7,23 @@ nav_order: 2
 
 # Quick Start
 
-Get up and running with Context Bridge in 5 minutes.
+Get up and running with Context Bridge in under 5 minutes.
 
 ---
 
-## 1. Initialize Configuration
-
-Start by initializing your Context Bridge configuration:
+## Step 1: Install & Initialize
 
 ```bash
-context-bridge init
+# Clone and build
+git clone https://github.com/bridge-context/context-bridge.git
+cd context-bridge
+npm install && npm run build
+
+# Initialize configuration
+npm run cb init
 ```
 
-This creates the configuration directory and default files:
+This creates the configuration directory:
 
 ```
 ~/.context-bridge/
@@ -30,136 +34,88 @@ This creates the configuration directory and default files:
 
 ---
 
-## 2. Create a Project
-
-A project groups related repositories together. Create your first project:
+## Step 2: Set Up Your Project
 
 ```bash
-context-bridge project create my-app "My full-stack application"
+# Create a project
+npm run cb project create myapp "My full-stack application"
+
+# Add your repositories
+npm run cb repo add api ~/projects/myapp-api
+npm run cb repo add web ~/projects/myapp-web
+npm run cb repo add shared ~/projects/myapp-shared
+
+# Verify setup
+npm run cb project list
 ```
 
-**Example:**
-
-```bash
-context-bridge project create ecommerce "E-commerce platform with API and frontend"
-```
-
----
-
-## 3. Add Repositories
-
-Add repositories to your project:
-
-```bash
-context-bridge repo add <name> <path>
-```
-
-**Example - adding multiple repos:**
-
-```bash
-# Add backend API repository
-context-bridge repo add api ~/projects/ecommerce-api
-
-# Add frontend application
-context-bridge repo add frontend ~/projects/ecommerce-web
-
-# Add shared library
-context-bridge repo add shared ~/projects/ecommerce-shared
-```
-
-**Verify your setup:**
-
-```bash
-context-bridge project list
-```
-
-Output:
+**Output:**
 
 ```
 Projects:
 ─────────
-ecommerce
-  Description: E-commerce platform with API and frontend
+myapp
+  Description: My full-stack application
   Repositories:
-    - api: ~/projects/ecommerce-api
-    - frontend: ~/projects/ecommerce-web
-    - shared: ~/projects/ecommerce-shared
+    - api: ~/projects/myapp-api
+    - web: ~/projects/myapp-web
+    - shared: ~/projects/myapp-shared
 ```
 
 ---
 
-## 4. Install in Claude Desktop
-
-Install the MCP server in Claude Desktop:
+## Step 3: Install MCP Server
 
 ```bash
-context-bridge install
+npm run cb install
 ```
 
-**Restart Claude Desktop** to load the new MCP server.
+**Restart Claude Code** to load the MCP server.
+
+<details>
+<summary><strong>Manual Installation</strong></summary>
+
+Add to your Claude Code config (`~/.claude/claude_desktop_config.json`):
+
+```json
+{
+  "mcpServers": {
+    "context-bridge": {
+      "command": "node",
+      "args": ["/path/to/context-bridge/dist/mcp-server.js"]
+    }
+  }
+}
+```
+
+</details>
 
 ---
 
-## 5. Example Usage with Claude
+## Step 4: Start Using
 
-Once installed, you can use Context Bridge directly in your Claude conversations.
+Once installed, use natural language in Claude Code:
 
-### List Your Projects
+| Task | Example Prompt |
+|------|----------------|
+| **Query single repo** | "How does authentication work in the api repo?" |
+| **Query all repos** | "Search all repos for how user data is validated" |
+| **Cross-repo analysis** | "How does the frontend consume the API?" |
+| **Implement changes** | "Add email validation to user registration in the api repo" |
+| **Get structure** | "Show me the structure of the web repo" |
 
-Ask Claude:
+### Common Workflows
 
-> "What projects do I have configured in Context Bridge?"
-
-Claude will use the `list_projects` tool to show your available projects.
-
-### Query a Repository
-
-> "In my ecommerce project, how does the authentication system work in the API repo?"
-
-Claude spawns a sub-agent to analyze the `api` repository and returns a detailed explanation.
-
-### Query Across All Repositories
-
-> "Search all repos in ecommerce for how user data is validated"
-
-Claude queries all repositories in parallel, synthesizing findings from `api`, `frontend`, and `shared`.
-
-### Implement Changes
-
-> "Add email validation to the user registration in the API repo"
-
-Claude spawns an implementation agent that makes the changes directly in your codebase.
-
-### Get Repository Structure
-
-> "Show me the structure of the frontend repo"
-
-Claude returns a high-level overview of the repository's architecture and key files.
-
----
-
-## Common Workflows
-
-### Cross-Repository Refactoring
-
-> "Rename the User model to Account across all repos in the ecommerce project"
-
-### Understanding Dependencies
-
-> "How does the frontend consume the API? Show me the integration points"
-
-### Code Review Assistance
-
-> "Review the recent changes in the api repo for security issues"
-
-### Documentation Generation
-
-> "Generate API documentation for all endpoints in the api repo"
+```
+"Rename the User model to Account across all repos"
+"Review recent changes in api for security issues"
+"Generate API documentation for all endpoints"
+```
 
 ---
 
 ## Next Steps
 
-- [Configuration Reference](./configuration) - Customize agent behavior and storage
-- [Usage Guide](../usage) - Advanced workflows and best practices
-- [API Reference](../api) - Complete MCP tools documentation
+- [Configuration Reference](./configuration.md) - Customize agent behavior and storage
+- [Multi-Repo Workflow Guide](../guides/multi-repo-workflow.md) - Advanced workflows
+- [MCP Tools Reference](../mcp-tools/) - Complete tools documentation

@@ -539,6 +539,6 @@ cb ui
 
 ## See Also
 
-- [Architecture Overview](./index) - High-level system architecture
-- [Storage Layer](./storage-layer) - Event system details
-- [Utility Commands](../cli/utility-commands) - Dashboard CLI options
+- [Architecture Overview](./) - High-level system architecture
+- [Storage Layer](./storage-layer.md) - Event system details
+- [Utility Commands](../cli/utility-commands.md) - Dashboard CLI options

@@ -19,21 +19,21 @@ Context Bridge is an MCP (Model Context Protocol) server that enables AI assista
 
 ## In This Section
 
-### [Installation](./installation)
+### [Installation](./installation.md)
 Complete installation guide including:
 - Prerequisites (Node.js, AI CLI tools)
 - Installing from source
 - Global CLI setup
 - MCP client configuration
 
-### [Quick Start](./quick-start)
+### [Quick Start](./quick-start.md)
 Get up and running in 5 minutes:
 - Initialize configuration
 - Create your first project
 - Add repositories
 - Start using with Claude
 
-### [Configuration](./configuration)
+### [Configuration](./configuration.md)
 Detailed configuration reference:
 - Project and repository setup
 - Agent adapter options
@@ -65,5 +65,5 @@ context-bridge install
 
 ## Need Help?
 
-- Check the [Configuration](./configuration) guide for troubleshooting
+- Check the [Configuration](./configuration.md) guide for troubleshooting
 - Visit our [GitHub Issues](https://github.com/bridge-context/context-bridge/issues) for support

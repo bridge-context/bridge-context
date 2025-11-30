@@ -546,6 +546,6 @@ export default CustomAdapter;
 
 ## See Also
 
-- [StorageAdapter](./storage-adapter) - Storage adapter interface
-- [Custom Adapters Guide](../guides/custom-adapters) - Step-by-step adapter creation
-- [Agent System Architecture](../architecture/agent-system) - Agent system internals
+- [StorageAdapter](./storage-adapter.md) - Storage adapter interface
+- [Custom Adapters Guide](../guides/custom-adapters.md) - Step-by-step adapter creation
+- [Agent System Architecture](../architecture/agent-system.md) - Agent system internals

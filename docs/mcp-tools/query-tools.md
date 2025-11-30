@@ -431,6 +431,6 @@ context-bridge storage stats
 
 ## See Also
 
-- [Context Tools](./context-tools) - Project and repository management
-- [Implementation Tools](./implementation-tools) - Write-capable tools
-- [Storage Commands](../cli/storage-commands) - Cache management
+- [Context Tools](./context-tools.md) - Project and repository management
+- [Implementation Tools](./implementation-tools.md) - Write-capable tools
+- [Storage Commands](../cli/storage-commands.md) - Cache management

@@ -538,7 +538,7 @@ CONTEXT_BRIDGE_AGENT_TIMEOUT=900000 context-bridge serve
 
 ## See Also
 
-- [Context Tools](./context-tools) - Project and repository management
-- [Query Tools](./query-tools) - Read-only repository queries
-- [Agent Commands](../cli/agent-commands) - Configure agent adapters
-- [Configuration](../getting-started/configuration) - Timeout settings
+- [Context Tools](./context-tools.md) - Project and repository management
+- [Query Tools](./query-tools.md) - Read-only repository queries
+- [Agent Commands](../cli/agent-commands.md) - Configure agent adapters
+- [Configuration](../getting-started/configuration.md) - Timeout settings

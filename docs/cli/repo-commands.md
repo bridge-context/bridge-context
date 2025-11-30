@@ -346,5 +346,5 @@ Fixing repository issues:
 
 ## See Also
 
-- [Project Commands](./project-commands) - Create and manage projects
-- [Configuration](../getting-started/configuration) - Repository configuration options
+- [Project Commands](./project-commands.md) - Create and manage projects
+- [Configuration](../getting-started/configuration.md) - Repository configuration options

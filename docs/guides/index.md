@@ -15,14 +15,14 @@ Practical guides for common workflows and advanced usage.
 
 | Guide | Description |
 |-------|-------------|
-| [Multi-Repo Workflow](./multi-repo-workflow) | Working with microservices and multiple repositories |
-| [Custom Adapters](./custom-adapters) | Creating adapters for new AI providers |
-| [Troubleshooting](./troubleshooting) | Diagnosing and fixing common issues |
+| [Multi-Repo Workflow](./multi-repo-workflow.md) | Working with microservices and multiple repositories |
+| [Custom Adapters](./custom-adapters.md) | Creating adapters for new AI providers |
+| [Troubleshooting](./troubleshooting.md) | Diagnosing and fixing common issues |
 
 ---
 
 ## Quick Links
 
-- **Getting Started?** - See [Quick Start](../getting-started/quick-start)
-- **CLI Reference** - See [CLI Commands](../cli)
-- **MCP Tools** - See [MCP Tools Reference](../mcp-tools)
+- **Getting Started?** - See [Quick Start](../getting-started/quick-start.md)
+- **CLI Reference** - See [CLI Commands](../cli/)
+- **MCP Tools** - See [MCP Tools Reference](../mcp-tools/)

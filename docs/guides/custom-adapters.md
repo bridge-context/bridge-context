@@ -564,6 +564,6 @@ Output:
 
 ## See Also
 
-- [Agent System Architecture](../architecture/agent-system) - Deep dive on agent internals
-- [Configuration Reference](../getting-started/configuration) - Agent configuration options
-- [Troubleshooting](./troubleshooting) - Common issues and solutions
+- [Agent System Architecture](../architecture/agent-system.md) - Deep dive on agent internals
+- [Configuration Reference](../getting-started/configuration.md) - Agent configuration options
+- [Troubleshooting](./troubleshooting.md) - Common issues and solutions

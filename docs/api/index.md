@@ -15,8 +15,8 @@ Complete TypeScript API reference for Context Bridge's core interfaces, types, a
 
 | Interface | Description |
 |-----------|-------------|
-| [AgentAdapter](./agent-adapter) | Interface for AI agent implementations |
-| [StorageAdapter](./storage-adapter) | Interface for data persistence backends |
+| [AgentAdapter](./agent-adapter.md) | Interface for AI agent implementations |
+| [StorageAdapter](./storage-adapter.md) | Interface for data persistence backends |
 
 ---
 
@@ -181,13 +181,13 @@ if (!result.success) {
 
 ## In This Section
 
-- [AgentAdapter](./agent-adapter) - Agent adapter interface reference
-- [StorageAdapter](./storage-adapter) - Storage adapter interface reference
+- [AgentAdapter](./agent-adapter.md) - Agent adapter interface reference
+- [StorageAdapter](./storage-adapter.md) - Storage adapter interface reference
 
 ---
 
 ## See Also
 
-- [Architecture Overview](../architecture) - System design and patterns
-- [Custom Adapters Guide](../guides/custom-adapters) - Step-by-step adapter creation
-- [Configuration](../getting-started/configuration) - Configuration options
+- [Architecture Overview](../architecture/) - System design and patterns
+- [Custom Adapters Guide](../guides/custom-adapters.md) - Step-by-step adapter creation
+- [Configuration](../getting-started/configuration.md) - Configuration options

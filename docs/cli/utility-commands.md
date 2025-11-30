@@ -728,8 +728,8 @@ Configuration Migration
 
 ## See Also
 
-- [Project Commands](./project-commands) - Manage projects
-- [Repository Commands](./repo-commands) - Manage repositories
-- [Agent Commands](./agent-commands) - Configure agents
-- [Storage Commands](./storage-commands) - Manage storage
-- [Configuration](../getting-started/configuration) - Configuration reference
+- [Project Commands](./project-commands.md) - Manage projects
+- [Repository Commands](./repo-commands.md) - Manage repositories
+- [Agent Commands](./agent-commands.md) - Configure agents
+- [Storage Commands](./storage-commands.md) - Manage storage
+- [Configuration](../getting-started/configuration.md) - Configuration reference
