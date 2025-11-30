@@ -3,7 +3,7 @@
 
 title: Bridge Context
 description: MCP server for multi-repo AI development workflows
-baseurl: "/"
+baseurl: ""
 url: "https://bridge-context.github.io"
 
 # Theme
